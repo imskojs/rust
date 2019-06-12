@@ -34,4 +34,17 @@ eg) `expect('Failed to read line')` will throw error with `"Failed to read line"
 
 * Placeholder in string is expressed with `{}`. eg) `println!("x = {} and y = {}", x, y)`
 
-* TODO: Generating a Secret Number.
+* `binary crate` only contains executable. `library crate` has source code.
+
+* `crates.io` is like a `npmjs.com`
+
+* `Cargo.lock` is like `package-lock.json`
+
+* `cargo update` is like `npm update`, uses semver. Updates PATCH version not MINOR or MAJOR version.
+If MINOR or MAJOR version update is needed then change `Cargo.toml` with specific MAJOR or MINOR version.
+Note: `cargo update` updates `Cargo.lock` only and not `Cargo.toml`. <Q::--save flag?>
+
+* Traits, unlike `use std::io` where `io` is associate function, `use rand::Rng` (notice Capital R of `Rng`) is a trait.
+Trait defines methods that `rand` implements. More on traits in 10_.
+
+* TODO: rand::thread_rng
